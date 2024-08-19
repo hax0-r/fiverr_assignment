@@ -603,6 +603,29 @@ header {
 	}
 }
 
+
+.swiper {
+	width: 100%;
+	height: 100%;
+  }
+
+  .swiper-slide {
+	/* text-align: center; */
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .swiper-slide img {
+	display: block;
+	/* width: 100%;
+	height: 100%; */
+	/* object-fit: cover; */
+  }
+
+
 .background-only {
 	background: linear-gradient(173.34deg, #fff 0%, #fff 0%, rgba(243, 244, 245, 0.2) 11.74%, #f3f4f5 27.92%, rgba(243, 244, 245, 0) 44.79%, rgba(243, 244, 245, 0.68) 60.42%, #f3f4f5 79.17%, #fff 100%);
 }
@@ -1138,12 +1161,9 @@ header {
 	}
 }
 
-.swiper-container{
-	margin: 4rem auto;
-}
+
 
 .swiper-button-next:after, .swiper-button-prev:after{
-	padding-top: 6rem;
 	font-size: 2rem !important;
 	color: #55b76b;
 }
