@@ -506,10 +506,9 @@ header {
     justify-content: space-around;
   }
   
-  .footer-1 img {
-    height: 4rem;
-    margin-bottom: 1.6rem;
-  }
+.footer-1 img {
+    height: 10rem;
+}
   
   .footer-1 p {
     width: 20rem;

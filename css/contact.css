@@ -699,14 +699,17 @@ cursor: pointer;
   margin-bottom: 1rem;
 }
 
+.footer-1 img {
+  height: 10rem;
+}
+
 @media screen and (max-width: 992px) {
   .footer-img img {
     height: 18rem;
   }
 
   .footer-1 img {
-    height: 3rem;
-    margin-bottom: 1.4rem;
+    height: 10rem;
   }
 
   .footer-1 p {
