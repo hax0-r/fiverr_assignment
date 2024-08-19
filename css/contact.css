@@ -504,7 +504,7 @@ header {
 
 .form-section button {
 cursor: pointer;
-  background-color: var(--black);
+  background-color: #55b76b;
   color: #ffffff;
   padding: 10px 25px;
   border: none;
