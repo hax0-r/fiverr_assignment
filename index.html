@@ -10,6 +10,7 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- -------------font awesome------------ -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="shortcut icon" href="./Imgs/cafe.png" type="image/x-icon">
   <title>Green Goods Emporium</title>
@@ -208,82 +209,76 @@
             <img src="./Assets/rightLeave.png" height="200px" alt="" />
           </div>
         </div>
-
-        <div class="page4-cards">
-          <!-- ------------------------------------------------------------------------- -->
-          <div class="page4-card ">
-            <div class="page4-card1">
-              <div class="page4-img-content">
-                <img src="./Assets/ppp1.png" height="220px" alt="" />
-                <div class="page4-content">
-                  <p>#1 Selling</p>
-                  <h3>
-                    Green <br>Toner
-                  </h3>
+    
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Each product card should be a swiper-slide -->
+            <div class="swiper-slide">
+              <div class="page4-card1">
+                <div class="page4-img-content">
+                  <img src="./Assets/ppp1.png" height="220px" alt="" />
+                  <div class="page4-content">
+                    <p>#1 Selling</p>
+                    <h3>Green <br>Toner</h3>
+                  </div>
+                </div>
+                <p>
+                  Saving time or money, improving productivity, or solving a problem click and order now.
+                </p>
+                <div class="page4-button-content">
+                  <h6>$59.99</h6>
+                  <button>Order now</button>
                 </div>
               </div>
-              <p>
-                saving time or money, improving productivity, or solving a problem click and order now
-                click and order now
-              </p>
-              <div class="page4-button-content">
-                <h6>$59.99</h6>
-                <button>Order now</button>
+            </div>
+            <div class="swiper-slide">
+              <div class="page4-card1">
+                <div class="page4-img-content">
+                  <img src="./Assets/ppp2.png" height="220px" alt="" />
+                  <div class="page4-content">
+                    <p>#2 Selling</p>
+                    <h3>Innisfree <br> Green</h3>
+                  </div>
+                </div>
+                <p>
+                  Saving time or money, improving productivity, or solving a problem click and order now.
+                </p>
+                <div class="page4-button-content">
+                  <h6>$49.99</h6>
+                  <button>Order now</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="page4-card1">
+                <div class="page4-img-content">
+                  <img src="./Assets/ppp3.png" height="220px" alt="" />
+                  <div class="page4-content">
+                    <p>#3 Selling</p>
+                    <h3>Cosmetics <br>Toner</h3>
+                  </div>
+                </div>
+                <p>
+                  Saving time or money, improving productivity, or solving a problem click and order now.
+                </p>
+                <div class="page4-button-content">
+                  <h6>$77.99</h6>
+                  <button>Order now</button>
+                </div>
               </div>
             </div>
           </div>
-          <!-- ------------------------------------------------------------------------- -->
-
-          <!-- ------------------------------------------------------------------------- -->
-          <div class="page4-card  ">
-            <div class="page4-card1">
-              <div class="page4-img-content">
-                <img src="./Assets/ppp2.png" height="220px" alt="" />
-                <div class="page4-content">
-                  <p>#2 Selling</p>
-                  <h3>
-                    Innisfree <br> Green
-                  </h3>
-                </div>
-              </div>
-              <p>
-                saving time or money, improving productivity, or solving a problem click and order now click and order
-                now
-              </p>
-              <div class="page4-button-content">
-                <h6>$49.99</h6>
-                <button>Order now</button>
-              </div>
-            </div>
-          </div>
-          <!-- ------------------------------------------------------------------------- -->
-
-          <!-- ------------------------------------------------------------------------- -->
-          <div class="page4-card   ">
-            <div class="page4-card1">
-              <div class="page4-img-content">
-                <img src="./Assets/ppp3.png" height="220px" alt="" />
-                <div class="page4-content">
-                  <p>#3 Selling</p>
-                  <h3>
-                    Cosmetics <br />
-                    Toner
-                  </h3>
-                </div>
-              </div>
-              <p>
-                saving time or money, improving productivity, or solving a problem click and order now
-              </p>
-              <div class="page4-button-content">
-                <h6>$77.99</h6>
-                <button>Order now</button>
-              </div>
-            </div>
-          </div>
-          <!-- ------------------------------------------------------------------------- -->
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+    
+          <!-- Add Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </div>
+    
 
 
     <!-- =====================page4 end========================= -->
@@ -410,5 +405,36 @@
 </body>
 
 <script src="./index.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
+  });
+</script>
+
 
 </html>
