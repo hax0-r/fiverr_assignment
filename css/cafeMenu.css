@@ -457,7 +457,7 @@ body {
         font-weight: 800;
         color: #55b76b;
         padding-bottom: 1rem;
-        font-size: clamp(1.5rem, -0.875rem + 8.333vw, 4rem);
+        font-size: clamp(2.2rem, -0.875rem + 8.333vw, 4rem);
     }
 
     p {
